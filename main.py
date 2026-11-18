@@ -9,9 +9,9 @@ def welcome_script():
 
 def print_receipt(amount_of_people, bill, tip):
     total_bill = int(bill + bill * tip / 100)
-    bill_per_person = total_bill / amount_of_people//2
-    print(f"Subtotal: {bill:,}")
-    print(f"Tip:{tip:,}")
+    bill_per_person = total_bill // amount_of_people
+    print(f"Subtotal $: {bill:,}")
+    print(f"Tip:{bill * tip//100:,}")
     print(f"Total:  {total_bill:,}")
     print(f"Bill: {total_bill:,}")
     print(f"Bill per person: {bill_per_person:,}")
