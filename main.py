@@ -15,5 +15,7 @@ def print_receipt(amount_of_people, bill, tip):
     print(f"Total: + str(total_bill):,")
     print("Bill:" + str(bill_per_person))
 
-    return welcome_script()
+    return
+
+welcome_script()
 
