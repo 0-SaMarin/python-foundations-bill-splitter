@@ -10,10 +10,13 @@ def welcome_script():
 def print_receipt(amount_of_people, bill, tip):
     total_bill = int(bill + bill * tip / 100)
     bill_per_person = total_bill // amount_of_people
+    leftover = total_bill % amount_of_people
+
     print(f"Subtotal $: {bill:,}")
     print(f"Tip:{bill * tip//100:,}")
     print(f"Total:  {total_bill:,}")
     print(f"Bill per person: {bill_per_person:,}")
+    print(f"Leftover: {leftover:,}")
 
     return
 
