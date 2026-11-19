@@ -13,7 +13,6 @@ def print_receipt(amount_of_people, bill, tip):
     print(f"Subtotal $: {bill:,}")
     print(f"Tip:{bill * tip//100:,}")
     print(f"Total:  {total_bill:,}")
-    print(f"Bill: {total_bill:,}")
     print(f"Bill per person: {bill_per_person:,}")
 
     return
